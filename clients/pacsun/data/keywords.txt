@@ -1,0 +1,25 @@
+hoodie
+hoodies
+jeans
+baggy jeans
+graphic tees
+sweatpants
+sweatshirt
+shorts
+dresses
+swim
+bikini
+jackets
+sneakers
+hats
+beanie
+cargo pants
+joggers
+crop top
+flannel
+sweater
+backpack
+sunglasses
+socks
+fleece
+denim

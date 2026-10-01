@@ -149,12 +149,15 @@ node prep/report-failing-products.mjs results/<run>/failures.log  # failures gro
 - **A test refuses to start** when a file was made for a different environment, or is older than the client's `maxDataAgeHours`.
   - `-e ALLOW_STALE_DATA=true` overrides this outside prod only.
   - Optional data (such as gift bundles) can be missing; the step that needs it is then skipped.
+- **Categories (optional):** if `clients/<client>/data/categories_<env>.json` exists (from `prep/extract-categories.mjs`) for the same environment and API path and is at most `maxCategoryAgeHours` old (default 168; set it in the client's `config.js`), `setup()` uses its validated category ids instead of the live `/shop` list. Otherwise the live list is used.
 - **Refreshing the data:**
 
 ```bash
 node prep/validate-products.mjs <client> --env staging                   # full list (~3.5 s per product)
 node prep/validate-products.mjs <client> --env staging --max-valid 60    # sanity subset
 node prep/validate-gift-bundles.mjs <client> --env staging               # clients with gift bundles
+node prep/extract-categories.mjs <client> --env staging                    # category tree + which categories work (PLP and every sort order)
+node prep/validate-accounts.mjs hot_topic --env staging                       # login accounts: guest token + login for each; keeps the ones that work
 # prod needs --allow-prod; --max-rpm <n> caps the validator's request rate (e.g. 40)
 # --input <file> uses another id list; --fresh ignores earlier results; --max-age <hours> sets the resume window
 ```
