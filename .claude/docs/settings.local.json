@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 /private/tmp/claude-502/*/scratchpad/prepare_jmeter_compare.py)",
+      "Bash(jmeter -n -t *)",
+      "Bash(node run.mjs twc paced *)"
+    ]
+  }
+}

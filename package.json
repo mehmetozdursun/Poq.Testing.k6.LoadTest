@@ -1,0 +1,14 @@
+{
+  "name": "poq-k6-load-tests",
+  "version": "0.1.0",
+  "private": true,
+  "description": "k6 load tests for Poq client apps (see .claude/k6-migration-plan.md)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "twc:validate:products": "node prep/validate-products.mjs twc",
+    "twc:validate:bundles": "node prep/validate-gift-bundles.mjs twc"
+  }
+}

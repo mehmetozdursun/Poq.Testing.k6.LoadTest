@@ -1,0 +1,12 @@
+results/*
+!results/.gitkeep
+secrets/
+node_modules/
+clients/*/data/accounts*.json
+.DS_Store
+.env
+*.partial
+clients/*/data/products_*.json
+clients/*/data/gift_bundles_*.json
+clients/*/data/categories_*.json
+clients/*/data/categories_*.csv
