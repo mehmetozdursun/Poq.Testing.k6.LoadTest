@@ -10,7 +10,6 @@ import { account } from '../../lib/platform/index.js';
 import client from './config.js';
 
 export const NAMES = {
-  priceFilter: 'PLP filter: price range',
   recsPdpBottom: 'Recommendations: PDP bottom',
   recsPdpTop: 'Recommendations: PDP top',
   recsRecentlyViewed: 'Recommendations: recently viewed',
@@ -32,6 +31,7 @@ export const NAMES = {
   storesByCoords: 'Stores by coordinates',
   more: 'More screen',
   voucher: 'Add voucher',
+  voucherRemove: 'Remove voucher',
   login: 'Login',
   updateProfile: 'Update profile',
   addresses: 'Get addresses',
@@ -123,8 +123,26 @@ export function removeBagItem(s, cartItemId, product) {
   });
 }
 
+// Applies the voucher and removes it again: a device can only hold it once, so a left-over voucher
+// made the next iteration's add fail with InvalidCouponCodeException. The remove call is
+// DELETE /vouchers/{appId}/{coupon_item_id} (card_factory JMeter suite, which asserts 204).
 export function voucher(s) {
-  request(s, { name: NAMES.voucher, method: 'POST', path: `/vouchers/${s.cfg.env.appId}`, body: { voucherCode: client.voucherCode } });
+  const added = request(s, { name: NAMES.voucher, method: 'POST', path: `/vouchers/${s.cfg.env.appId}`, body: { voucherCode: client.voucherCode } });
+  if (!added.ok) return; // the add failure is already counted; nothing was applied, so nothing to remove
+  const couponItemId = findKey(added.json, 'coupon_item_id');
+  if (!couponItemId) return correlationFailure(s, NAMES.voucher, 'coupon_item_id');
+  request(s, { name: NAMES.voucherRemove, method: 'DELETE', path: `/vouchers/${s.cfg.env.appId}/${couponItemId}`, expect: [200, 204], data: { couponItemId } });
+}
+
+// First value of `key` anywhere in a parsed JSON body (the JMeter extractor is $..coupon_item_id).
+function findKey(node, key) {
+  if (!node || typeof node !== 'object') return undefined;
+  if (node[key] !== undefined && node[key] !== null) return node[key];
+  for (const v of Object.values(node)) {
+    const found = findKey(v, key);
+    if (found !== undefined) return found;
+  }
+  return undefined;
 }
 
 // ---- wishlist v3 (Gen-2 shapes): add → get → delete this item → clear ----

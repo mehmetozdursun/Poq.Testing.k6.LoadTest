@@ -141,14 +141,7 @@ function searchSteps(s, keyword) {
 
 function sortAndFilter(s, categoryId) {
   for (const variant of client.plpVariants) catalog.plp(s, categoryId, variant);
-  const [lo, hi] = client.priceRange;
-  const max = lo + Math.floor(Math.random() * (hi - lo + 1));
-  const min = lo + Math.floor(Math.random() * (max - lo + 1));
-  catalog.plp(s, categoryId, {
-    name: ht.NAMES.priceFilter,
-    query: { maxPrice: max, minPrice: min },
-    checks: { 'has paging links': (j, res) => ['first', 'last', 'previous', 'next'].every((k) => res.body.includes(`"${k}"`)) },
-  });
+  // No price-range call: the app's filter screen has no price filter (JMeter sent one; it returned 500 for many categories).
 }
 
 function viewPdp(s, product) {
