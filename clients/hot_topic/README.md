@@ -80,6 +80,19 @@ clients/hot_topic/test.js
   client. The existing lists were made for the live `hottopic` client; check them against `hottopic-perf`.
 - **Products:** validate on the targeted client before a run. The validators read the same config, so
   they now go to `hottopic-perf` as well.
+- **Run script** ([scripts/run.sh](scripts/run.sh)): a thin bash wrapper (Linux and macOS) that builds the plain `k6 run`
+  command for the three runs above, prints it, and names the outputs. Run it from anywhere:
+  ```bash
+  clients/hot_topic/scripts/run.sh <sanity|warmup|load> [--env prod|staging] [--yes] [--dry-run] [-- extra k6 args]
+  ```
+  - `load` is `PROFILE=scale`. `ABORT_DELAY` is 60 s, 90 s and 3 min for sanity, warm-up and load.
+  - On prod it asks you to type `PROD` first (`--yes` skips it). `--dry-run` prints the command and sends nothing.
+  - It does not validate products; do that first (see above). `MAX_DATA_AGE_HOURS=72 clients/hot_topic/scripts/run.sh sanity`
+    overrides the 12 h data limit (sanity only).
+  - It writes `results/hot_topic_<env>_<run>_<timestamp>_{report.html, failures.log, output.txt}` next to k6's own
+    `summary.json`, `endpoints.csv` and `failures.csv`. The dashboard is on `localhost:5665`; the HTML report is the
+    saved copy of it, written when the run ends.
+  - Use `tmux` on a VM for the 15 and 85 minute runs, so a dropped SSH session does not stop the test.
 
 ## Test data
 
