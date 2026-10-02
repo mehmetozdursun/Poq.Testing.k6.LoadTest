@@ -162,7 +162,7 @@ node prep/validate-accounts.mjs hot_topic --env staging                       # 
 # --input <file> uses another id list; --fresh ignores earlier results; --max-age <hours> sets the resume window
 ```
 
-  - **Input lists:** `clients/<client>/input/products.txt` (or `products_<env>.txt`) and `gift_bundles.txt`, one ID per line.
+  - **Input lists:** `clients/<client>/input/products.json` (or `products_<env>.json`) and `gift_bundles.json`, each a JSON array of IDs.
   - **Rules** (ported from the Python validators):
     - Products: stock quantity ≥ 5 (`--min-stock`) and a guest-cart add-to-cart proof. The client config's `validator` picks the add-to-cart body and success rule (`quantityAdded > 0`, HTTP 200, or the variant present in the returned bag). The default variant is tried first; a new cart session is used every 10 products; there is a 2–5 s pause between products (`--delay`).
     - Bundles: each entry resolved by `ctaStatus == "AddToBag"`, highest stock first, with a size fallback on stock rejections; each bundle gets its own guest cart.
@@ -181,7 +181,7 @@ node prep/validate-accounts.mjs hot_topic --env staging                       # 
 - store-search coordinates inside the client's bounding box;
 - guest cart-sign emails (`perf-…@poq.performance.test.com`).
 
-**Keywords** are in `clients/<client>/data/keywords.txt`. Choosing realistic keywords is an open decision.
+**Keywords** are in `clients/<client>/data/keywords.json`. Choosing realistic keywords is an open decision.
 
 ## Prod safety
 
@@ -241,7 +241,7 @@ run.mjs              optional launcher: one results folder per run
    - `endpoints` tweaks, only where the client differs from the platform.
 3. Write `journeys.js` from `lib/platform` calls. Add an `endpoints.js` only for what the platform doesn't cover.
 4. Write a short `test.js` with `createTest()`, modelled on an existing client's `test.js`.
-5. Add `input/products.txt`, then validate: `node prep/validate-products.mjs <client> --env staging`.
+5. Add `input/products.json`, then validate: `node prep/validate-products.mjs <client> --env staging`.
 6. Run `smoke`, then `sanity`, and compare against the JMeter baseline if one exists (plan §15, phase 4).
 7. Write `clients/<client>/README.md` with the client's scenarios, options, data and open items, and add it to the client table above.
 

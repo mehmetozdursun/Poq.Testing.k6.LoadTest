@@ -8,7 +8,7 @@ import secrets from 'k6/secrets';
 import { createTest } from '../../lib/test-kit.js';
 import { correlationFailure } from '../../lib/http.js';
 import { derivePoqAuthKey } from '../../lib/auth.js';
-import { loadLines } from '../../lib/data.js';
+import { loadList } from '../../lib/data.js';
 import client from './config.js';
 import * as ht from './journeys.js';
 import { NAMES } from './endpoints.js';
@@ -27,7 +27,7 @@ const test = createTest(client, {
   endpointNames: ht.endpointNames,
   accountScenarios: ['account'],
 });
-const universalLinks = loadLines('universalLinks', import.meta.resolve('./data/universal_links.txt'));
+const universalLinks = loadList('universalLinks', import.meta.resolve('./data/universal_links.json'));
 
 export const options = test.options;
 

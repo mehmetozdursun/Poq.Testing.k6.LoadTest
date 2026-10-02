@@ -25,7 +25,7 @@
 // OLDEST check, which is what k6's freshness check looks at.
 //
 // Writes clients/<client>/data/categories_<env>.json (all categories, with their check results, plus
-// the list of valid ids) and categories_<env>.csv (same columns as the Python extractor, plus the check).
+// the list of valid ids).
 
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { parseArgs, loadClient, createApi, nowIso } from './lib/poq-api.mjs';
@@ -153,9 +153,6 @@ function save(partial) {
   };
   const base = `clients/${clientName}/data/categories_${opts.env}`;
   writeFileSync(`${base}.json${partial ? '.partial' : ''}`, JSON.stringify(doc, null, 1));
-  const rows = [['category_id', 'category_title', 'categoryUrl', 'filter_key', 'filter_value', 'parent_id', 'leaf', 'products', 'check']];
-  for (const c of unique) rows.push([c.id, c.title, c.categoryUrl, c.filterKey, c.filterValue, c.parentId || '', c.leaf, c.check && c.check.items != null ? c.check.items : '', c.check ? (c.check.ok ? 'ok' : c.check.reason) : '']);
-  writeFileSync(`${base}.csv${partial ? '.partial' : ''}`, rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');
   return `${base}.json${partial ? '.partial' : ''}`;
 }
 
@@ -187,11 +184,6 @@ function carryOver(list) {
     }
   }
   return n;
-}
-
-function csv(v) {
-  const s = String(v ?? '');
-  return /[",\n]/.test(s) ? `"${s.replaceAll('"', '""')}"` : s;
 }
 
 function countBy(list) {

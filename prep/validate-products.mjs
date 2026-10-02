@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Validates every product in clients/<client>/input/products.txt before a run (plan §10.1)
+// Validates every product in clients/<client>/input/products.json before a run (plan §10.1)
 // and writes clients/<client>/data/products_<env>.json. Port of the Python
 // products_availability_validator (Poq.Testing.Utilities new_gen), same rules:
 //   PDP → default variant first, then the others → stock.available and quantity ≥ minStock
@@ -10,7 +10,7 @@
 //
 //   --allow-prod          required for --env prod
 //   --max-valid <n>       stop after n valid products (sanity subset; recorded in the file's scope)
-//   --input <file>        product id list, one per line (default clients/<client>/input/products_<env>.txt or products.txt)
+//   --input <file>        product ids as a JSON array (default clients/<client>/input/products_<env>.json or products.json)
 //   --min-stock <n>       default 5
 //   --delay <min,max>     seconds between products (default 2,5)
 //   --max-rpm <n>         hard cap on requests per minute for the whole run
@@ -42,9 +42,9 @@ try {
 const minStock = Number(opts['min-stock'] ?? 5);
 const maxValid = opts['max-valid'] ? Number(opts['max-valid']) : null;
 const delay = (opts.delay || '2,5').split(',').map(Number);
-// Per-environment list (input/products_<env>.txt) when the client has one, else input/products.txt.
-const envInput = `clients/${clientName}/input/products_${opts.env}.txt`;
-const inputPath = opts.input || (existsSync(envInput) ? envInput : `clients/${clientName}/input/products.txt`);
+// Per-environment list (input/products_<env>.json) when the client has one, else input/products.json.
+const envInput = `clients/${clientName}/input/products_${opts.env}.json`;
+const inputPath = opts.input || (existsSync(envInput) ? envInput : `clients/${clientName}/input/products.json`);
 const allIds = readIds(inputPath);
 const api = createApi(ctx, { maxRpm: opts['max-rpm'] ? Number(opts['max-rpm']) : undefined });
 

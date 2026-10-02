@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Validates every gift bundle in clients/<client>/input/gift_bundles.txt before a run and
+// Validates every gift bundle in clients/<client>/input/gift_bundles.json before a run and
 // writes clients/<client>/data/gift_bundles_<env>.json. Port of the Python gift_bundle_validator
 // (Poq.Testing.Utilities new_gen), same rules, per bundle with its own guest cart:
 //   bundle PDP → customData.bundle.entries
@@ -27,7 +27,7 @@ try {
   console.error(e.message);
   process.exit(2);
 }
-const inputPath = opts.input || `clients/${clientName}/input/gift_bundles.txt`;
+const inputPath = opts.input || `clients/${clientName}/input/gift_bundles.json`;
 const ids = readIds(inputPath);
 const api = createApi(ctx, { maxRpm: opts['max-rpm'] ? Number(opts['max-rpm']) : undefined });
 const PAUSE = 0.5; // seconds between entry calls, as in the Python validator

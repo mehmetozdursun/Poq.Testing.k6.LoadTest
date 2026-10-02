@@ -29,10 +29,10 @@ node prep/validate-products.mjs twc --env staging --max-valid 60    # sanity sub
 node prep/validate-gift-bundles.mjs twc --env staging               # 21 bundles, a few minutes
 ```
 
-- **Inputs:** `input/products.txt` (2,354 ids) and `input/gift_bundles.txt` (21 bundles), from Utilities `new_gen/input`.
+- **Inputs:** `input/products.json` (2,354 ids) and `input/gift_bundles.json` (21 bundles), from Utilities `new_gen/input`.
 - **Gift bundles** (`data/gift_bundles_<env>.json`) are optional: without the file, the gift box step is skipped.
 - **Accounts** (`data/accounts_<env>.json`, gitignored): staging 337, prod 20, dev 326, from the JMeter suite. Prod's 20 accounts only support small logged-in concurrency.
-- **Keywords:** `data/keywords.txt`, 108 generic fashion terms carried over from JMeter (replacing them is an open decision).
+- **Keywords:** `data/keywords.json`, 108 generic fashion terms carried over from JMeter (replacing them is an open decision).
 - **Data age limit:** 12 h (`maxDataAgeHours`).
 
 ## Prod notes

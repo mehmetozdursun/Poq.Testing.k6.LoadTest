@@ -34,7 +34,7 @@ export async function loadClient(name, envName, { allowProd }) {
 }
 
 export function readIds(path) {
-  return [...new Set(readFileSync(path, 'utf8').split('\n').map((l) => l.trim()).filter(Boolean))];
+  return [...new Set(JSON.parse(readFileSync(path, 'utf8')))];
 }
 
 export function shuffle(list) {
