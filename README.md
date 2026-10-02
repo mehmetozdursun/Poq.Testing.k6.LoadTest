@@ -50,6 +50,7 @@ k6 run --log-format raw --console-output results/failures.log -e ENV=staging -e 
 | `TARGET_RPS=n`, `RAMP_UP=10s` | Absolute request rate and ramp-up for `custom`. |
 | `THINK_TIME=min,max` | Seconds between journey steps (`0` disables them). |
 | `ALLOW_STALE_DATA=true` | Allows validated data older than the client's limit. Refused on prod. |
+| `MAX_DATA_AGE_HOURS=n` | Overrides the client's data age limit for this run (e.g. `48`). Works on prod; the data must still be for the same environment. |
 | `FAILURE_LOG_LIMIT=n` | Full-detail failure lines per VU, request and status (default 10; 0 = unlimited). |
 | `ABORT_FAILED_RATE=0.1` | Prod only: abort the run above this failure rate (default 10%). |
 | `ABORT_DELAY=60s` | Prod only: start evaluating the abort after this long (default 60 s). |
