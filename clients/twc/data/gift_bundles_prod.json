@@ -1,0 +1,321 @@
+{
+ "client": "twc",
+ "env": "prod",
+ "generatedAt": "2026-09-28T16:57:56Z",
+ "source": "prep/validate-gift-bundles.mjs, input brands/twc/input/gift_bundles.txt",
+ "scope": "full list",
+ "rules": {
+  "entriesAddToCartProof": true
+ },
+ "summary": {
+  "checked": 21,
+  "valid": 17,
+  "rejected": 4
+ },
+ "bundles": [
+  {
+   "bundleId": "get-the1-look-email-1",
+   "name": "Totally tonal",
+   "entries": [
+    {
+     "code": "A19479",
+     "variantId": "A19479031AFB"
+    },
+    {
+     "code": "A16590",
+     "variantId": "A16590000AGJ"
+    },
+    {
+     "code": "A17669",
+     "variantId": "A17669157AFQ"
+    },
+    {
+     "code": "A19935",
+     "variantId": "A19935030AFB"
+    }
+   ]
+  },
+  {
+   "bundleId": "get-the-look-email-2",
+   "name": "At ease",
+   "entries": [
+    {
+     "code": "A15761",
+     "variantId": "A15761030ACQ"
+    },
+    {
+     "code": "A15746",
+     "variantId": "A15746030ACQ"
+    },
+    {
+     "code": "A19330",
+     "variantId": "A19330155ASO"
+    },
+    {
+     "code": "A19935",
+     "variantId": "A19935030AFB"
+    }
+   ]
+  },
+  {
+   "bundleId": "get-the-look-email-3",
+   "name": "Touch of chocolate",
+   "entries": [
+    {
+     "code": "A18917",
+     "variantId": "A18917030APC"
+    },
+    {
+     "code": "A19372",
+     "variantId": "A19372000ARV"
+    },
+    {
+     "code": "A16867",
+     "variantId": "A16867155ACN"
+    },
+    {
+     "code": "A19935",
+     "variantId": "A19935030AFB"
+    }
+   ]
+  },
+  {
+   "bundleId": "get-the-look-email-5",
+   "name": "Warmer Whites",
+   "entries": [
+    {
+     "code": "A19584",
+     "variantId": "A19584030ACU"
+    },
+    {
+     "code": "A19311",
+     "variantId": "A19311030AHZ"
+    },
+    {
+     "code": "A18967",
+     "variantId": "A18967000ARV"
+    }
+   ]
+  },
+  {
+   "bundleId": "get-the-look-email-6",
+   "name": "Natural Neutral",
+   "entries": [
+    {
+     "code": "A20056",
+     "variantId": "A20056031AVK"
+    },
+    {
+     "code": "A19355",
+     "variantId": "A19355035AUR"
+    },
+    {
+     "code": "relaxed-cord-jogger",
+     "variantId": "A20078006AUS"
+    }
+   ]
+  },
+  {
+   "bundleId": "le-creuset-salt-and-pepper-mill-set",
+   "name": "Le Creuset Salt & Pepper Mill Set",
+   "entries": [
+    {
+     "code": "KAHSI",
+     "variantId": "KAHSINWH"
+    },
+    {
+     "code": "KAHPM",
+     "variantId": "KAHPMNWH"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-bath-and-body-deluxe-gift-box",
+   "name": "The Lime & Bay Bath & Body Deluxe Gift Box",
+   "entries": [
+    {
+     "code": "A12557",
+     "variantId": "A12557000AIB"
+    },
+    {
+     "code": "LBDBY",
+     "variantId": "LBDBYNNA"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-breakfast-in-bed-gift-box",
+   "name": "The Breakfast-In-Bed Gift Box",
+   "entries": [
+    {
+     "code": "A14642",
+     "variantId": "A14642031AIB"
+    },
+    {
+     "code": "A09470",
+     "variantId": "A09470000AIB"
+    },
+    {
+     "code": "A12126",
+     "variantId": "A12126000ACQ"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-christmas-moments-gift-box",
+   "name": "The Christmas Moments Gift Box",
+   "entries": [
+    {
+     "code": "A12126",
+     "variantId": "A12126000ACQ"
+    },
+    {
+     "code": "A05940",
+     "variantId": "A05940000AAA"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-cosy-gift-box",
+   "name": "The Cosy Gift Box",
+   "entries": [
+    {
+     "code": "A19346",
+     "variantId": "A19346000ACQ"
+    },
+    {
+     "code": "super-soft-faux-fur-hot-water-bottle",
+     "variantId": "A18871000AIY"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-just-for-her-gift-box",
+   "name": "The Just For Her Gift Box",
+   "entries": [
+    {
+     "code": "A15774",
+     "variantId": "A15774000AVM"
+    },
+    {
+     "code": "A15775",
+     "variantId": "A15775000AVM"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-perfect-cashmere-gift-box",
+   "name": "The Perfect Cashmere Gift Box",
+   "entries": [
+    {
+     "code": "A18917",
+     "variantId": "A18917030APC"
+    },
+    {
+     "code": "A12126",
+     "variantId": "A12126000ACQ"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-scent-and-style-giftbox",
+   "name": "The Scent & Style Gift Box",
+   "entries": [
+    {
+     "code": "A06916",
+     "variantId": "A06916000AIB"
+    },
+    {
+     "code": "A16499",
+     "variantId": "A16499000AAA"
+    },
+    {
+     "code": "A15885",
+     "variantId": "A15885000AHY"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-unwind-gift-box",
+   "name": "The Unwind Gift Box",
+   "entries": [
+    {
+     "code": "A12126",
+     "variantId": "A12126000ACQ"
+    },
+    {
+     "code": "A09470",
+     "variantId": "A09470000AIB"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-warm-and-restore-gift-box",
+   "name": "The Warm & Restore Gift Box",
+   "entries": [
+    {
+     "code": "A18286",
+     "variantId": "A18286000AAA"
+    },
+    {
+     "code": "super-soft-faux-fur-hot-water-bottle",
+     "variantId": "A18873000AGH"
+    },
+    {
+     "code": "A21002",
+     "variantId": "A21002000AAA"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-wedding-gift-box",
+   "name": "The Wedding Gift Box",
+   "entries": [
+    {
+     "code": "A15888",
+     "variantId": "A15888000AHY"
+    },
+    {
+     "code": "A13525",
+     "variantId": "A13525000AGN"
+    }
+   ]
+  },
+  {
+   "bundleId": "the-with-love-gift-box",
+   "name": "The Wind Down Gift Box ",
+   "entries": [
+    {
+     "code": "A17523",
+     "variantId": "A17523030AHL"
+    },
+    {
+     "code": "A19346",
+     "variantId": "A19346000ACQ"
+    }
+   ]
+  }
+ ],
+ "rejected": [
+  {
+   "bundleId": "get-the-look-email-4",
+   "status": "partial",
+   "notes": "no size could be added for: A20553; bulk add status 200, quantityAdded 0"
+  },
+  {
+   "bundleId": "jute-woven-placemat-and-coasters-set-of-8",
+   "status": "not_found",
+   "notes": "PDP status 404"
+  },
+  {
+   "bundleId": "matching-moments-holly-print-pyjamas",
+   "status": "partial",
+   "notes": "no available size for: A20488; bulk add status 200, quantityAdded 0"
+  },
+  {
+   "bundleId": "matching-moments-starry-night-pyjamas",
+   "status": "partial",
+   "notes": "no available size for: A20478; bulk add status 200, quantityAdded 0"
+  }
+ ]
+}

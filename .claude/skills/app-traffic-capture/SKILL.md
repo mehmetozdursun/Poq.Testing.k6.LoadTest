@@ -119,7 +119,7 @@ Follow the project `CLAUDE.md` and the existing clients (`clients/twc`, `clients
    sessions or headers by platform. The app start makes the common calls once plus every
    platform-only endpoint (e.g. Android `settings/config` and the iOS splash).
 3. Product ids for the validator: crawl category PLPs on the **same non-prod environment** at a
-   gentle rate (≤ 60 req/min) into `clients/<client>/input/products_<env>.txt`, then validate with
+   gentle rate (≤ 60 req/min) into `clients/<client>/input/products_<env>.json`, then validate with
    `node prep/validate-products.mjs <client> --env <env>` (sanity subset allowed only for sanity runs).
 4. Verify: `k6 inspect` for every touched client, then a dev smoke — report requests/iteration,
    failures with their failure-log reason, one `poq-user-id` per session, and that cleanup left

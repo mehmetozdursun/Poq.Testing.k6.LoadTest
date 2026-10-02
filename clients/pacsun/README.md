@@ -46,9 +46,9 @@ far. Configuration: [config.js](config.js).
 node prep/validate-products.mjs pacsun --env dev [--max-valid 60] [--max-rpm 40]
 ```
 
-- **Input:** `input/products_dev.txt`, 1,045 ids crawled from the 33 dev category PLPs (3 pages each). It is a snapshot of dev, not a catalogue feed.
+- **Input:** `input/products_dev.json`, 1,045 ids crawled from the 33 dev category PLPs (3 pages each). It is a snapshot of dev, not a catalogue feed.
 - **Validator rules:** body `{variantId, quantity: 1, shipmentType: 'direct'}`; success = the variant is in the returned `cartItems` (the response has no `quantityAdded`).
-- **Keywords:** `data/keywords.txt`, 25 generic Pacsun terms (provisional).
+- **Keywords:** `data/keywords.json`, 25 generic Pacsun terms (provisional).
 
 ## Findings raised
 

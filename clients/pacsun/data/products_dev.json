@@ -1,0 +1,1303 @@
+{
+ "client": "pacsun",
+ "env": "dev",
+ "generatedAt": "2026-09-30T12:17:47Z",
+ "source": "prep/validate-products.mjs, input clients/pacsun/input/products_dev.txt",
+ "scope": "sanity subset: first 60 valid products (64 checked)",
+ "rules": {
+  "minStock": 5,
+  "addToCartProof": true
+ },
+ "summary": {
+  "checked": 64,
+  "valid": 60,
+  "rejected": 4,
+  "rejectedBy": {
+   "lowStock": 4
+  }
+ },
+ "products": [
+  {
+   "productId": "0150517680018",
+   "listingId": "0150517680018-poqListingId-020",
+   "sku": "0426635",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0673601990017",
+    "0643601990003",
+    "0704601602143",
+    "0751609690144",
+    "0150517470008",
+    "0133522800073",
+    "0120468689489",
+    "0644612040007",
+    "0751610230048",
+    "0622490750023"
+   ],
+   "productListings": null,
+   "colourSwatch": "020"
+  },
+  {
+   "productId": "0097603261778",
+   "listingId": "0097603261778-poqListingId-010",
+   "sku": "10019112",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0760609690046",
+    "0643141730003",
+    "0271609690173",
+    "0643600540075",
+    "0751461580057",
+    "0633143150005",
+    "0170454210046",
+    "0542497756212",
+    "0621003320017",
+    "0673610470061"
+   ],
+   "productListings": null,
+   "colourSwatch": "010"
+  },
+  {
+   "productId": "0120611140037",
+   "listingId": "0120611140037-poqListingId-004",
+   "sku": "10005248",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0679601600344",
+    "0679601600348",
+    "0656610500035",
+    "0622490750022",
+    "0580440570033",
+    "0131611110022",
+    "0642603440317",
+    "0641505030021",
+    "0150250500048",
+    "0811451180080827"
+   ],
+   "productListings": null,
+   "colourSwatch": "004"
+  },
+  {
+   "productId": "0160611980007634",
+   "listingId": "0160611980007634-poqListingId-634",
+   "sku": "0750638",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0622490750035",
+    "0621003320018",
+    "0239611280007",
+    "0870484260018",
+    "0135603580006",
+    "0641514970268",
+    "0150609530103",
+    "0656610500036",
+    "0243718010005",
+    "0860602840148"
+   ],
+   "productListings": null,
+   "colourSwatch": "634"
+  },
+  {
+   "productId": "0641717510005",
+   "listingId": "0641717510005-poqListingId-025",
+   "sku": "10020426",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0760000250013",
+    "0811451180341070",
+    "0656610470043",
+    "0645141730009",
+    "0150609530121",
+    "0542523050018",
+    "0133603580001",
+    "0622490750018",
+    "0679601600336",
+    "0634485250038"
+   ],
+   "productListings": null,
+   "colourSwatch": "025"
+  },
+  {
+   "productId": "0160611980035985",
+   "listingId": "0160611980035985-poqListingId-985",
+   "sku": "10045907",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0679601600333",
+    "0810451180156010",
+    "0621003320067",
+    "0844601600419",
+    "0844601600409",
+    "0150603490271",
+    "0150610600019",
+    "0271609690004",
+    "0150603490287",
+    "0656610500030"
+   ],
+   "productListings": null,
+   "colourSwatch": "985"
+  },
+  {
+   "productId": "0704601602167",
+   "listingId": "0704601602167-poqListingId-029",
+   "sku": "10007460",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0811451180117020",
+    "0150517470008",
+    "0645141730013",
+    "0621003320007",
+    "0642230830003",
+    "0150517680020",
+    "0751611060022",
+    "0120468689491",
+    "0645141730005",
+    "0760609690049"
+   ],
+   "productListings": null,
+   "colourSwatch": "029"
+  },
+  {
+   "productId": "0673610470053",
+   "listingId": "0673610470053-poqListingId-001",
+   "sku": "0732883",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0517610300048",
+    "0656499090291",
+    "0634603700002",
+    "0860242100016",
+    "0704601602166",
+    "0580491221034",
+    "0679601600335",
+    "0170611290006",
+    "0793601600076",
+    "0810451180145087"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0751610230047",
+   "listingId": "0751610230047-poqListingId-040",
+   "sku": "0592121",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0622610750001",
+    "0810603590088547",
+    "0643600540085",
+    "0751484260151",
+    "0870461580051",
+    "0810451180124001",
+    "0170611110010",
+    "0150610180009",
+    "0811451180117020",
+    "0679601600313"
+   ],
+   "productListings": null,
+   "colourSwatch": "040"
+  },
+  {
+   "productId": "0097603260690",
+   "listingId": "0097603260690-poqListingId-052",
+   "sku": "8819435",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0760609690051",
+    "0131611110025",
+    "0172468680007",
+    "0243141730025",
+    "0150611140007",
+    "0673610470054",
+    "0133603580004",
+    "0704601602138",
+    "0644611910001",
+    "0622490750041"
+   ],
+   "productListings": null,
+   "colourSwatch": "052"
+  },
+  {
+   "productId": "0131602840055",
+   "listingId": "0131602840055-poqListingId-004",
+   "sku": "0872390",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0810451180190092",
+    "0679601600282",
+    "0704601601900",
+    "0644454210001",
+    "0272611590011",
+    "0580440570034",
+    "0679601600307",
+    "0673601990015",
+    "0131454210133",
+    "0679601600369"
+   ],
+   "productListings": null,
+   "colourSwatch": "004"
+  },
+  {
+   "productId": "0633143150005",
+   "listingId": "0633143150005-poqListingId-213",
+   "sku": "0855155",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0133603580010",
+    "0645141730013",
+    "0133484260006",
+    "0673610470060",
+    "0810451180156010",
+    "0679601600326",
+    "0685601190861",
+    "0811451180309547",
+    "0150603260004",
+    "0131611110029"
+   ],
+   "productListings": null,
+   "colourSwatch": "213"
+  },
+  {
+   "productId": "0811451180340997",
+   "listingId": "0811451180340997-poqListingId-997",
+   "sku": "0963439",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0811451180138087",
+    "0634603700003",
+    "0642611980004849",
+    "0634505030025",
+    "0810603590004089",
+    "0172604890002",
+    "0650611090004",
+    "0633143150004",
+    "0150609530119",
+    "0679601600282"
+   ],
+   "productListings": null,
+   "colourSwatch": "997"
+  },
+  {
+   "productId": "0133603430022",
+   "listingId": "0133603430022-poqListingId-001",
+   "sku": "0856526",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0673610470046",
+    "0644514970002",
+    "0517610100003",
+    "0150603490273",
+    "0679601600333",
+    "0673505030064",
+    "0141484260036",
+    "0810603590111001",
+    "0150512830004",
+    "0643611060011"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0645491390001",
+   "listingId": "0645491390001-poqListingId-020",
+   "sku": "6779631",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0673601990006",
+    "0634485250128",
+    "0860602840131",
+    "0810603599074",
+    "0704601602111",
+    "0150522800017",
+    "0622490750029",
+    "0150611140010",
+    "0643601990007",
+    "0141484260054"
+   ],
+   "productListings": null,
+   "colourSwatch": "020"
+  },
+  {
+   "productId": "0790601600576",
+   "listingId": "0790601600576-poqListingId-001",
+   "sku": "10016683",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0650610830018",
+    "0642603445910",
+    "0180611140108",
+    "0704601602092",
+    "0580522360018",
+    "0634603260008",
+    "0634603260017",
+    "0634603700002",
+    "0704601602142",
+    "0131602840053"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0844601600412",
+   "listingId": "0844601600412-poqListingId-060",
+   "sku": "10006800",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0679601600317",
+    "0634485250067",
+    "0870461580052",
+    "0542523050013",
+    "0685601190978",
+    "0771471630002",
+    "0643600540075",
+    "0811603490006",
+    "0811603590115",
+    "0239611280006"
+   ],
+   "productListings": null,
+   "colourSwatch": "060"
+  },
+  {
+   "productId": "0133484260023",
+   "listingId": "0133484260023-poqListingId-001",
+   "sku": "7664162",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0133603580011",
+    "0170604890035",
+    "0131611110029",
+    "0644505030002",
+    "0243141730009",
+    "0656499090023",
+    "0622610750004",
+    "0271609690004",
+    "0131611110023",
+    "0751484260150"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0641514970305",
+   "listingId": "0641514970305-poqListingId-035",
+   "sku": "6563233",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0673505030063",
+    "0641522800014",
+    "0685601190864",
+    "0810451180139040",
+    "0133484260023",
+    "0673610470027",
+    "0239611280007",
+    "0150610180008",
+    "0131611110018",
+    "0141484260037"
+   ],
+   "productListings": null,
+   "colourSwatch": "035"
+  },
+  {
+   "productId": "0673491390100",
+   "listingId": "0673491390100-poqListingId-007",
+   "sku": "6034003",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0679601600280",
+    "0647611470014",
+    "0656448200003",
+    "0239611280012",
+    "0150609530090",
+    "0172611140003",
+    "0679601600333",
+    "0641514970094",
+    "0760513430002",
+    "0642230830007"
+   ],
+   "productListings": null,
+   "colourSwatch": "007"
+  },
+  {
+   "productId": "0772471630002",
+   "listingId": "0772471630002-poqListingId-527",
+   "sku": "10007265",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0150603490292",
+    "0641514970418",
+    "0633143150003",
+    "0643600540088",
+    "0679601600336",
+    "0641514810020",
+    "0673610720018",
+    "0643600540105",
+    "0141484260037",
+    "0704601602182"
+   ],
+   "productListings": null,
+   "colourSwatch": "527"
+  },
+  {
+   "productId": "0860602840148",
+   "listingId": "0860602840148-poqListingId-510",
+   "sku": "0897256",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0645491390001",
+    "0643600540075",
+    "0751484260150",
+    "0870461580312",
+    "0673499090059",
+    "0643601990004",
+    "0542497750010",
+    "0679601600321",
+    "0150609530121",
+    "0679601600289"
+   ],
+   "productListings": null,
+   "colourSwatch": "510"
+  },
+  {
+   "productId": "0642603440155",
+   "listingId": "0642603440155-poqListingId-569",
+   "sku": "9826439",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0673610470056",
+    "0271609690080",
+    "0133484260030",
+    "0772461580016",
+    "0160611980035985",
+    "0097603261798",
+    "0751461580023",
+    "0704601602167",
+    "0751611140005",
+    "0810451180190092"
+   ],
+   "productListings": null,
+   "colourSwatch": "569"
+  },
+  {
+   "productId": "0811451180341070",
+   "listingId": "0811451180341070-poqListingId-070",
+   "sku": "0974717",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0150517680017",
+    "0133603580005",
+    "0133522800001",
+    "0751611140004",
+    "0860242100016",
+    "0673610470047",
+    "0679601600304",
+    "0679601600310",
+    "0634485250127",
+    "0760609690063"
+   ],
+   "productListings": null,
+   "colourSwatch": "070"
+  },
+  {
+   "productId": "0133603580034",
+   "listingId": "0133603580034-poqListingId-001",
+   "sku": "5156005",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0201611140025",
+    "0150603490273",
+    "0150611280003",
+    "0643600540085",
+    "0751484260142",
+    "0170611110002",
+    "0120468689490",
+    "0128484260057",
+    "0760609690051",
+    "0150611280005"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0811451180334089",
+   "listingId": "0811451180334089-poqListingId-089",
+   "sku": "0912048",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0760513430003",
+    "0656499090043",
+    "0622610050002",
+    "0622490750024",
+    "0272611590010",
+    "0673505030065",
+    "0645610720018",
+    "0751250500045",
+    "0642603445910",
+    "0650611090013"
+   ],
+   "productListings": null,
+   "colourSwatch": "089"
+  },
+  {
+   "productId": "0133603580012",
+   "listingId": "0133603580012-poqListingId-001",
+   "sku": "3774619",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0643600540077",
+    "0133603580002",
+    "0673505030011",
+    "0637603260001",
+    "0685601190498",
+    "0673610470053",
+    "0679601600177",
+    "0760609690037",
+    "0133611110014",
+    "0180611140112"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0810603590088547",
+   "listingId": "0810603590088547-poqListingId-547",
+   "sku": "0328294",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0644611300005",
+    "0170604890035",
+    "0097525820056",
+    "0810603599074",
+    "0135000250021",
+    "0751250500045",
+    "0643601990002",
+    "0811603590001089",
+    "0120611140037",
+    "0150517470084"
+   ],
+   "productListings": null,
+   "colourSwatch": "547"
+  },
+  {
+   "productId": "0150517680026",
+   "listingId": "0150517680026-poqListingId-020",
+   "sku": "0665935",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0644505030002",
+    "0642230830008",
+    "0656499090022",
+    "0644603260012",
+    "0641514810175",
+    "0650611090008",
+    "0622490750036",
+    "0150522800016",
+    "0704601602082",
+    "0621003320024"
+   ],
+   "productListings": null,
+   "colourSwatch": "020"
+  },
+  {
+   "productId": "0760609690017",
+   "listingId": "0760609690017-poqListingId-060",
+   "sku": "5934161",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0641514810176",
+    "0860602840142",
+    "0141484260056",
+    "0645610720030",
+    "0673610470058",
+    "0133519270036",
+    "0133519270028",
+    "0150609530129",
+    "0673610470046",
+    "0133603430022"
+   ],
+   "productListings": null,
+   "colourSwatch": "060"
+  },
+  {
+   "productId": "0150603490293",
+   "listingId": "0150603490293-poqListingId-004",
+   "sku": "0964338",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0642603440317",
+    "0650611090012",
+    "0622610750001",
+    "0679601600350",
+    "0641514970411",
+    "0097603261832",
+    "0641514970094",
+    "0131602840036",
+    "0751484260151",
+    "0190522800373"
+   ],
+   "productListings": null,
+   "colourSwatch": "004"
+  },
+  {
+   "productId": "0673601990017",
+   "listingId": "0673601990017-poqListingId-010",
+   "sku": "0955492",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0150603260004",
+    "0810603590004089",
+    "0643600540091",
+    "0673601990019",
+    "0656499090041",
+    "0634505030024",
+    "0133484260007",
+    "0760609690002",
+    "0126522800050",
+    "0634505030021"
+   ],
+   "productListings": null,
+   "colourSwatch": "010"
+  },
+  {
+   "productId": "0133603580018",
+   "listingId": "0133603580018-poqListingId-001",
+   "sku": "4449898",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0131242100104",
+    "0775715770002",
+    "0844601600412",
+    "0133522800073",
+    "0633143150003",
+    "0150603260005",
+    "0150603490275",
+    "0637612040001",
+    "0133603580011",
+    "0517610100010"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0131611110029",
+   "listingId": "0131611110029-poqListingId-326",
+   "sku": "0900373",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0811603490006",
+    "0243141730040",
+    "0150603490288",
+    "0673610470027",
+    "0239611280012",
+    "0133604890094",
+    "0243141730033",
+    "0673610470051",
+    "0673610470061",
+    "0673499090001"
+   ],
+   "productListings": null,
+   "colourSwatch": "326"
+  },
+  {
+   "productId": "0673610720016",
+   "listingId": "0673610720016-poqListingId-001",
+   "sku": "10011882",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0128484260057",
+    "0131611110024",
+    "0650611090013",
+    "0580500270013",
+    "0097603261806",
+    "0150514260003",
+    "0183611140061",
+    "0673491390052",
+    "0243141730008",
+    "0622490750034"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0685601191030",
+   "listingId": "0685601191030-poqListingId-089",
+   "sku": "0069260",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0656491390009",
+    "0542497750029",
+    "0647611470009",
+    "0679601600306",
+    "0150603490285",
+    "0751611140004",
+    "0621003320040",
+    "0635603580002",
+    "0641490750001",
+    "0870461580054"
+   ],
+   "productListings": null,
+   "colourSwatch": "089"
+  },
+  {
+   "productId": "0679601600338",
+   "listingId": "0679601600338-poqListingId-020",
+   "sku": "0889642",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0150610600019",
+    "0150609530121",
+    "0751610230044",
+    "0760609690058",
+    "0131454210133",
+    "0772471630002",
+    "0131602840035",
+    "0641717510008",
+    "0150517680017",
+    "0542523050015"
+   ],
+   "productListings": null,
+   "colourSwatch": "020"
+  },
+  {
+   "productId": "0645491390021",
+   "listingId": "0645491390021-poqListingId-060",
+   "sku": "10015970",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0679601600335",
+    "0642230830003",
+    "0704601602157",
+    "0775715770009",
+    "0634485250126",
+    "0644611300006",
+    "0150603490292",
+    "0131242100105",
+    "0844601600418",
+    "0760609690051"
+   ],
+   "productListings": null,
+   "colourSwatch": "060"
+  },
+  {
+   "productId": "0650611090006",
+   "listingId": "0650611090006-poqListingId-020",
+   "sku": "8628232",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0704601602019",
+    "0704601602186",
+    "0679601600349",
+    "0811451180117020",
+    "0673603660024",
+    "0542523050013",
+    "0844601600409",
+    "0679601600346",
+    "0772468680003",
+    "0811451180342040"
+   ],
+   "productListings": null,
+   "colourSwatch": "020"
+  },
+  {
+   "productId": "0641514810020",
+   "listingId": "0641514810020-poqListingId-165",
+   "sku": "9586793",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0644490750002",
+    "0810603590004089",
+    "0645141730016",
+    "0631611890002",
+    "0656499090040",
+    "0150611280006",
+    "0170611140015",
+    "0673611010003",
+    "0790601600576",
+    "0150522800015"
+   ],
+   "productListings": null,
+   "colourSwatch": "165"
+  },
+  {
+   "productId": "0633143150004",
+   "listingId": "0633143150004-poqListingId-000",
+   "sku": "7937824",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0172611140003",
+    "0131611290012",
+    "0097603260589",
+    "0810451180156010",
+    "0170611110023",
+    "0870461580052",
+    "0622490750015",
+    "0150603490280",
+    "0635603580001",
+    "0679601600317"
+   ],
+   "productListings": null,
+   "colourSwatch": "000"
+  },
+  {
+   "productId": "0860602840131",
+   "listingId": "0860602840131-poqListingId-004",
+   "sku": "0650895",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0842601600407",
+    "0642603440159",
+    "0243141730022",
+    "0679601600278",
+    "0751611060022",
+    "0150610180011",
+    "0645610720031",
+    "0860602840149",
+    "0150609530103",
+    "0542497750037"
+   ],
+   "productListings": null,
+   "colourSwatch": "004"
+  },
+  {
+   "productId": "0150609530092",
+   "listingId": "0150609530092-poqListingId-861",
+   "sku": "0150078",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0646141730003",
+    "0685601190857",
+    "0673505030064",
+    "0150611140010",
+    "0844601600415",
+    "0634505030024",
+    "0844601600412",
+    "0097522802378",
+    "0679601600282",
+    "0622490750004"
+   ],
+   "productListings": null,
+   "colourSwatch": "861"
+  },
+  {
+   "productId": "0621003320011",
+   "listingId": "0621003320011-poqListingId-001",
+   "sku": "5806161",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0731604230012",
+    "0760609580004",
+    "0656610500036",
+    "0622490750018",
+    "0643600540090",
+    "0097603260905",
+    "0642230830004",
+    "0844601600415",
+    "0811451180349087",
+    "0673499090062"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0704601601987",
+   "listingId": "0704601601987-poqListingId-060",
+   "sku": "0736793",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0150609530132",
+    "0635603580002",
+    "0673603660051",
+    "0704601602092",
+    "0844601600418",
+    "0272609690008",
+    "0133611110015",
+    "0656499090024",
+    "0634610700001",
+    "0131604890125"
+   ],
+   "productListings": null,
+   "colourSwatch": "060"
+  },
+  {
+   "productId": "0097603261832",
+   "listingId": "0097603261832-poqListingId-052",
+   "sku": "10025196",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0634505030017",
+    "0170505850002",
+    "0645141730014",
+    "0704601602158",
+    "0190603260194",
+    "0150603490262",
+    "0643600540099",
+    "0811451180080827",
+    "0150611280003",
+    "0673610720016"
+   ],
+   "productListings": null,
+   "colourSwatch": "052"
+  },
+  {
+   "productId": "0542497756216",
+   "listingId": "0542497756216-poqListingId-165",
+   "sku": "10042866",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0150603490295",
+    "0621003320040",
+    "0679601600355",
+    "0150609530129",
+    "0673611490010",
+    "0811451180342040",
+    "0621003320013",
+    "0704601602143",
+    "0645141730008",
+    "0673491390153"
+   ],
+   "productListings": null,
+   "colourSwatch": "165"
+  },
+  {
+   "productId": "0811451180342040",
+   "listingId": "0811451180342040-poqListingId-040",
+   "sku": "0777383",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0621003320040",
+    "0150522800015",
+    "0673491390052",
+    "0135603580006",
+    "0731471630089",
+    "0673610990005",
+    "0751484260152",
+    "0731604230012",
+    "0870461580057",
+    "0679601600278"
+   ],
+   "productListings": null,
+   "colourSwatch": "040"
+  },
+  {
+   "productId": "0740609850051",
+   "listingId": "0740609850051-poqListingId-011",
+   "sku": "0980474",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0634603260017",
+    "0870461580051",
+    "0791601600298",
+    "0150603490283",
+    "0131242100105",
+    "0811451180080827",
+    "0760000250011",
+    "0634611010001",
+    "0679601600320",
+    "0272609690002"
+   ],
+   "productListings": null,
+   "colourSwatch": "011"
+  },
+  {
+   "productId": "0811603590001089",
+   "listingId": "0811603590001089-poqListingId-089",
+   "sku": "0245670",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0772461580013",
+    "0650611090013",
+    "0751484260189",
+    "0771471630002",
+    "0643600540052",
+    "0656499090043",
+    "0641522800032",
+    "0243718010024",
+    "0644505030003",
+    "0150609530119"
+   ],
+   "productListings": null,
+   "colourSwatch": "089"
+  },
+  {
+   "productId": "0673611060004",
+   "listingId": "0673611060004-poqListingId-010",
+   "sku": "0317586",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0643141730004",
+    "0271609690067",
+    "0642230830005",
+    "0751611060023",
+    "0120468689483",
+    "0201611140025",
+    "0751484260149",
+    "0679601600342",
+    "0243141730040",
+    "0150609530120"
+   ],
+   "productListings": null,
+   "colourSwatch": "010"
+  },
+  {
+   "productId": "0631509390001",
+   "listingId": "0631509390001-poqListingId-001",
+   "sku": "10010122",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0243141730021",
+    "0243141730001",
+    "0679601600264",
+    "0120611140037",
+    "0131602840053",
+    "0642603440155",
+    "0673448201651",
+    "0810603590088547",
+    "0811603590001089",
+    "0622490750011"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0243141730014",
+   "listingId": "0243141730014-poqListingId-031",
+   "sku": "10016817",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0844601600387",
+    "0704601602171",
+    "0622490750011",
+    "0679601600342",
+    "0629491390001",
+    "0760513430005",
+    "0673491390158",
+    "0643600540082",
+    "0673610470046",
+    "0272611590011"
+   ],
+   "productListings": null,
+   "colourSwatch": "031"
+  },
+  {
+   "productId": "0673505030015",
+   "listingId": "0673505030015-poqListingId-010",
+   "sku": "8628612",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0133603580019",
+    "0622490750004",
+    "0131611110030",
+    "0131602840063",
+    "0679601600267",
+    "0673601990017",
+    "0634505030027",
+    "0621003320038",
+    "0542221770097",
+    "0844601600400"
+   ],
+   "productListings": null,
+   "colourSwatch": "010"
+  },
+  {
+   "productId": "0643141730004",
+   "listingId": "0643141730004-poqListingId-020",
+   "sku": "1016583",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0643600540077",
+    "0634603700002",
+    "0644037910002",
+    "0643600540096",
+    "0133611110015",
+    "0644512940001",
+    "0870609690483",
+    "0641717510002",
+    "0128484260056",
+    "0131454210224"
+   ],
+   "productListings": null,
+   "colourSwatch": "020"
+  },
+  {
+   "productId": "0641514810175",
+   "listingId": "0641514810175-poqListingId-040",
+   "sku": "10011355",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0641514970230",
+    "0517610300048",
+    "0704601602175",
+    "0243141730040",
+    "0643600540076",
+    "0239611280006",
+    "0150610180011",
+    "0131602840052",
+    "0243718010024",
+    "0644522800005"
+   ],
+   "productListings": null,
+   "colourSwatch": "040"
+  },
+  {
+   "productId": "0645141730016",
+   "listingId": "0645141730016-poqListingId-001",
+   "sku": "9902990",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0810451180156010",
+    "0131604890125",
+    "0150517680018",
+    "0150603490276",
+    "0150603490271",
+    "0673611060004",
+    "0170611110002",
+    "0643485250009",
+    "0170611110023",
+    "0141484260061"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  },
+  {
+   "productId": "0642230830004",
+   "listingId": "0642230830004-poqListingId-504",
+   "sku": "10036748",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0131602840035",
+    "0673601990007",
+    "0647610580024",
+    "0635603580002",
+    "0679601600317",
+    "0622490750041",
+    "0645141730008",
+    "0542221770149",
+    "0673610720015",
+    "0793601600240"
+   ],
+   "productListings": null,
+   "colourSwatch": "504"
+  },
+  {
+   "productId": "0634505030017",
+   "listingId": "0634505030017-poqListingId-010",
+   "sku": "0404392",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0150603490276",
+    "0621003320017",
+    "0656610500035",
+    "0810451180145087",
+    "0243141730036",
+    "0642230830001",
+    "0679601600304",
+    "0673491390023",
+    "0243141730023",
+    "0656420350010"
+   ],
+   "productListings": null,
+   "colourSwatch": "010"
+  },
+  {
+   "productId": "0517610100005",
+   "listingId": "0517610100005-poqListingId-001",
+   "sku": "0734582",
+   "categoryId": null,
+   "productType": null,
+   "recentlyViewedIds": [
+    "0679601600300",
+    "0656499090041",
+    "0622490750032",
+    "0150250500075",
+    "0775715770011",
+    "0239611280013",
+    "0751461580059",
+    "0542523050013",
+    "0740484260174",
+    "0673610720015"
+   ],
+   "productListings": null,
+   "colourSwatch": "001"
+  }
+ ],
+ "rejected": [
+  {
+   "productId": "0150440200009",
+   "reason": "lowStock",
+   "detail": "available but quantity < 5"
+  },
+  {
+   "productId": "0673491390052",
+   "reason": "lowStock",
+   "detail": "available but quantity < 5"
+  },
+  {
+   "productId": "0642603440151",
+   "reason": "lowStock",
+   "detail": "available but quantity < 5"
+  },
+  {
+   "productId": "0150250500075",
+   "reason": "lowStock",
+   "detail": "available but quantity < 5"
+  }
+ ]
+}

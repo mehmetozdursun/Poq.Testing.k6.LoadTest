@@ -87,10 +87,10 @@ clients/hot_topic/test.js
   leaf category as a product list (the plain call and the first sort order; `--all-sorts` for every one). It resumes where it stopped (results younger than `--max-age`, default 24 h, are kept; `--fresh` starts over). It writes `data/categories_<env>.json` (all categories, the check result
   of each, and `validIds`) and a CSV. Categories answering 500 or returning no products are marked not usable (any category with at least one product is kept; `--min-items` changes that) (the sanity run on `hottopic-perf`
   hit `band-merch-shop-by-artist-morgan-wallen`, which returned 500 for every sort). k6 reads it in `setup()`: when `categories_<env>.json` exists for the same environment and API path and is at most `maxCategoryAgeHours` old (default 168), its `validIds` replace the live `/shop` list, and the run prints `N validated categories`; otherwise the live list is used and a warning is added to the report.
-- **Inputs:** `input/products_prod.txt`, `input/products_staging.txt` (per-environment lists).
+- **Inputs:** `input/products_prod.json`, `input/products_staging.json` (per-environment lists).
 - **Validator rules:** a fresh device id per cart session; add-to-bag body `{quantity, variantId, productId}`; success = HTTP 200.
 - **Accounts** (`data/accounts_<env>.json`, gitignored): prod 978, staging 496.
-- **Keywords:** `data/keywords.txt`, 9,890 random dictionary words from JMeter (replacing them is an open decision). `data/universal_links.txt` holds the universal links.
+- **Keywords:** `data/keywords.json`, 9,890 random dictionary words from JMeter (replacing them is an open decision). `data/universal_links.json` holds the universal links.
 - Only about 15% of the listed prod catalogue is purchasable on the live client; 40 of 389 checked products return HTTP 500 on the PDP.
 
 ## Open items
