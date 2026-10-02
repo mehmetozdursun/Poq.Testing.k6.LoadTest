@@ -1,0 +1,1438 @@
+{
+ "client": "twc",
+ "env": "prod",
+ "generatedAt": "2026-09-28T16:53:59Z",
+ "source": "prep/validate-products.mjs, input /private/tmp/claude-502/-Users-sozdursun-poq-Poq-Testing-k6-LoadTest/46f2e8fa-df3b-4696-a4ea-42eb471aa1b7/scratchpad/python60_ids.txt",
+ "scope": "custom input /private/tmp/claude-502/-Users-sozdursun-poq-Poq-Testing-k6-LoadTest/46f2e8fa-df3b-4696-a4ea-42eb471aa1b7/scratchpad/python60_ids.txt (60 ids)",
+ "rules": {
+  "minStock": 5,
+  "addToCartProof": true
+ },
+ "summary": {
+  "checked": 60,
+  "valid": 60,
+  "rejected": 0,
+  "rejectedBy": {}
+ },
+ "products": [
+  {
+   "productId": "A12094",
+   "listingId": "A12094102AAA",
+   "sku": "A12094102AAA",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A18974",
+    "A07331",
+    "A19569",
+    "A14015",
+    "A18281",
+    "A19212",
+    "PUABX",
+    "A18856",
+    "A19191",
+    "A20075"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_1"
+  },
+  {
+   "productId": "A19191",
+   "listingId": "A19191030ALT",
+   "sku": "A19191030ALT",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A18281",
+    "A19558",
+    "A18908",
+    "A19431",
+    "A17170",
+    "A11960",
+    "A20146",
+    "LEBTS",
+    "SYDBS",
+    "PUASD"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_390"
+  },
+  {
+   "productId": "A16274",
+   "listingId": "A16274000AAA",
+   "sku": "A16274000AAA",
+   "categoryId": "candles",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19231",
+    "A17519",
+    "A07355",
+    "A18908",
+    "A20075",
+    "A07331",
+    "A19804",
+    "A19569",
+    "A19227",
+    "A04605"
+   ],
+   "productListings": [
+    "SCDCD",
+    "SCDFO",
+    "A06486",
+    "A12097",
+    "SCDLC",
+    "A16277",
+    "SCDDF"
+   ],
+   "colourSwatch": "colour_1"
+  },
+  {
+   "productId": "A06223",
+   "listingId": "A06223097AIB",
+   "sku": "A06223097AIB",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19351",
+    "PUASD",
+    "A18464",
+    "A16274",
+    "A14016",
+    "A03331",
+    "A19899",
+    "A20433",
+    "A19528",
+    "A19212"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A19429",
+   "listingId": "A19429031AVL",
+   "sku": "A19429031AVL",
+   "categoryId": "jumpers-and-cardigans",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "XSAED",
+    "A21009",
+    "A07264",
+    "A17170",
+    "A06223",
+    "A17883",
+    "A18974",
+    "A20146",
+    "A16274",
+    "A20433"
+   ],
+   "productListings": [
+    "A19720",
+    "portobello-barrel-jeans",
+    "A20589",
+    "A16867",
+    "A18894"
+   ],
+   "colourSwatch": "colour_1116"
+  },
+  {
+   "productId": "A19605",
+   "listingId": "A19605030ACM",
+   "sku": "A19605030ACM",
+   "categoryId": "loungewear",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A20055",
+    "A19231",
+    "A04605",
+    "A20297",
+    "A18464",
+    "A19899",
+    "A18871",
+    "A20433",
+    "A19804",
+    "A18856"
+   ],
+   "productListings": [
+    "A20253",
+    "A15746",
+    "A15240",
+    "A14515",
+    "A19438"
+   ],
+   "colourSwatch": "colour_313"
+  },
+  {
+   "productId": "A18974",
+   "listingId": "A18974000AGJ",
+   "sku": "A18974000AGJ",
+   "categoryId": "toys-and-books",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "XCAEE",
+    "A18908",
+    "A18771",
+    "A19804",
+    "A16744",
+    "LEBTS",
+    "A20297",
+    "A18871",
+    "A17883",
+    "A19431"
+   ],
+   "productListings": [
+    "A18976",
+    "A19446",
+    "A18978",
+    "A18919",
+    "A18973"
+   ],
+   "colourSwatch": "colour_33"
+  },
+  {
+   "productId": "A12468",
+   "listingId": "A12468000AAA",
+   "sku": "A12468000AAA",
+   "categoryId": "electronic-diffusers",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19899",
+    "A06223",
+    "A18464",
+    "A19107",
+    "A07355",
+    "A19231",
+    "A18908",
+    "XSAED",
+    "A19429",
+    "A20146"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_1"
+  },
+  {
+   "productId": "A06830",
+   "listingId": "A06830102AIX",
+   "sku": "A06830102AIX",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19107",
+    "A14016",
+    "SYDBS",
+    "A19569",
+    "A04317",
+    "A04605",
+    "A19601",
+    "A18771",
+    "A18281",
+    "A20074"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_39"
+  },
+  {
+   "productId": "A19528",
+   "listingId": "A19528000AIW",
+   "sku": "A19528000AIW",
+   "categoryId": "swimwear",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19569",
+    "PUABX",
+    "LEBTS",
+    "A20297",
+    "A19107",
+    "XCAEE",
+    "A19006",
+    "A18908",
+    "A14015",
+    "XSAED"
+   ],
+   "productListings": [
+    "A18425",
+    "A19530",
+    "A19525"
+   ],
+   "colourSwatch": "colour_113"
+  },
+  {
+   "productId": "A17170",
+   "listingId": "A17170097AET",
+   "sku": "A17170097AET",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19558",
+    "A18281",
+    "A18771",
+    "JWAEX",
+    "A19227",
+    "A19429",
+    "A07331",
+    "SYDBS",
+    "LEBTS",
+    "A04317"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_303"
+  },
+  {
+   "productId": "A17163",
+   "listingId": "A17163097AET",
+   "sku": "A17163097AET",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A20074",
+    "A14015",
+    "A18871",
+    "A04605",
+    "A03331",
+    "A18464",
+    "A17883",
+    "A19605",
+    "A19601",
+    "A20146"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_303"
+  },
+  {
+   "productId": "LEBTS",
+   "listingId": "LEBTSSWH",
+   "sku": "LEBTSSWH",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "JWAEX",
+    "PUASD",
+    "A19601",
+    "WHAPW",
+    "A19351",
+    "A18281",
+    "A20297",
+    "A04317",
+    "A19006",
+    "A19231"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "WHAPW",
+   "listingId": "WHAPWWWH",
+   "sku": "WHAPWWWH",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A20074",
+    "A19212",
+    "A07355",
+    "LEBTS",
+    "A18464",
+    "A12468",
+    "A20297",
+    "XCAEE",
+    "PUASD",
+    "A19107"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A19899",
+   "listingId": "A19899000AGD",
+   "sku": "A19899000AGD",
+   "categoryId": "jewellery",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A07331",
+    "A19006",
+    "A17883",
+    "A17163",
+    "A06223",
+    "A07355",
+    "A19328",
+    "A20075",
+    "XSAED",
+    "A18281"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_44"
+  },
+  {
+   "productId": "A19601",
+   "listingId": "A19601000AIB",
+   "sku": "A19601000AIB",
+   "categoryId": "decorative-accessories",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19227",
+    "XCAEE",
+    "A18874",
+    "A19107",
+    "A18908",
+    "A06223",
+    "A17883",
+    "A19605",
+    "A19569",
+    "A20433"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A13260",
+   "listingId": "A13260000AUS",
+   "sku": "A13260000AUS",
+   "categoryId": "jewellery",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19212",
+    "A20146",
+    "A07355",
+    "A17170",
+    "A12468",
+    "A04605",
+    "A14016",
+    "A18281",
+    "A20055",
+    "A19107"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_1103"
+  },
+  {
+   "productId": "A21009",
+   "listingId": "A21009000AGW",
+   "sku": "A21009000AGW",
+   "categoryId": "toys-and-books",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A18874",
+    "A19558",
+    "A03331",
+    "A14016",
+    "A19899",
+    "A19231",
+    "A20074",
+    "A19351",
+    "A18464",
+    "A16274"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_53"
+  },
+  {
+   "productId": "A20433",
+   "listingId": "A20433124AIB",
+   "sku": "A20433124AIB",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19601",
+    "A19191",
+    "A19528",
+    "A18874",
+    "A13260",
+    "A16274",
+    "A19804",
+    "A20074",
+    "A19328",
+    "A21009"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A19107",
+   "listingId": "A19107076AFM",
+   "sku": "A19107076AFM",
+   "categoryId": "baby-gift-sets",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A20297",
+    "A04605",
+    "A16744",
+    "A19227",
+    "A18464",
+    "XSAED",
+    "A14015",
+    "A19558",
+    "A07355",
+    "A03331"
+   ],
+   "productListings": [
+    "A19042",
+    "A19110",
+    "A19041"
+   ],
+   "colourSwatch": "colour_220"
+  },
+  {
+   "productId": "A19328",
+   "listingId": "A19328000ABZ",
+   "sku": "A19328000ABZ",
+   "categoryId": "bags-and-purses",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A18974",
+    "A07264",
+    "XCAEE",
+    "A16274",
+    "A19006",
+    "A19212",
+    "PUABX",
+    "A19528",
+    "A19899",
+    "A19429"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_282"
+  },
+  {
+   "productId": "A20075",
+   "listingId": "A20075030AAJ",
+   "sku": "A20075030AAJ",
+   "categoryId": "pyjamas",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "PUASD",
+    "A14016",
+    "A18974",
+    "A17519",
+    "A19558",
+    "A16744",
+    "A18874",
+    "SYDBS",
+    "A19528",
+    "A06830"
+   ],
+   "productListings": [
+    "A20074",
+    "A20073",
+    "organic-cotton-waffle-double-faced-robe",
+    "A19326",
+    "A18843"
+   ],
+   "colourSwatch": "colour_5"
+  },
+  {
+   "productId": "A19227",
+   "listingId": "A19227079ACA",
+   "sku": "A19227079ACA",
+   "categoryId": "dresses-and-rompers",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A04605",
+    "A18281",
+    "PUASD",
+    "XSAED",
+    "A20055",
+    "A18974",
+    "A18464",
+    "A19429",
+    "A14015",
+    "A17519"
+   ],
+   "productListings": [
+    "A19966",
+    "A19974",
+    "A18943",
+    "A19879",
+    "A20838",
+    "A19078",
+    "A19072",
+    "A19228",
+    "A19120",
+    "A20839",
+    "A18977",
+    "A20837",
+    "A19142",
+    "A19070",
+    "A19964",
+    "A19114"
+   ],
+   "colourSwatch": "colour_292"
+  },
+  {
+   "productId": "JWAEX",
+   "listingId": "JWAEXXNA",
+   "sku": "JWAEXXNA",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A14015",
+    "A18856",
+    "PUASD",
+    "PUABX",
+    "A12468",
+    "WHAPW",
+    "A19899",
+    "A16744",
+    "A19569",
+    "XCAEE"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_1"
+  },
+  {
+   "productId": "A18871",
+   "listingId": "A18871000AIY",
+   "sku": "A18871000AIY",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19431",
+    "A17519",
+    "A18281",
+    "A19227",
+    "A20146",
+    "A07331",
+    "A19212",
+    "A19899",
+    "A14016",
+    "A19605"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_42"
+  },
+  {
+   "productId": "A17883",
+   "listingId": "A17883076AFM",
+   "sku": "A17883076AFM",
+   "categoryId": "baby-sleepsuits",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "LEBTS",
+    "A19899",
+    "A16274",
+    "A19191",
+    "A19569",
+    "A19227",
+    "A19328",
+    "A17519",
+    "JWAEX",
+    "A12094"
+   ],
+   "productListings": [
+    "party-animals-bed-linen-collection",
+    "organic-cotton-hydrocotton-baby-robe",
+    "organic-hydrocotton-bear-hooded-towel"
+   ],
+   "colourSwatch": "colour_220"
+  },
+  {
+   "productId": "PUABX",
+   "listingId": "PUABXXCW",
+   "sku": "PUABXXCW",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A16744",
+    "A06223",
+    "A18874",
+    "XCAEE",
+    "A19231",
+    "A19107",
+    "A04317",
+    "A17883",
+    "A19558",
+    "A17519"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_160"
+  },
+  {
+   "productId": "XSAED",
+   "listingId": "XSAEDDNA",
+   "sku": "XSAEDDNA",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A06830",
+    "A19431",
+    "A18874",
+    "A18281",
+    "A19191",
+    "A11960",
+    "A14015",
+    "A18464",
+    "JWAEX",
+    "A18856"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_1"
+  },
+  {
+   "productId": "A07355",
+   "listingId": "A07355108AJA",
+   "sku": "A07355108AJA",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "XSAED",
+    "A18771",
+    "A16744",
+    "A19431",
+    "XCAEE",
+    "A17170",
+    "A07331",
+    "A18464",
+    "A18871",
+    "A06223"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_408"
+  },
+  {
+   "productId": "A19558",
+   "listingId": "A19558000AGN",
+   "sku": "A19558000AGN",
+   "categoryId": "candle-holders",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19431",
+    "WHAPW",
+    "A18874",
+    "A07331",
+    "SYDBS",
+    "A19804",
+    "XCAEE",
+    "A19227",
+    "A19429",
+    "A12468"
+   ],
+   "productListings": [
+    "A19569",
+    "A19560"
+   ],
+   "colourSwatch": "colour_2"
+  },
+  {
+   "productId": "A19569",
+   "listingId": "A19569000AGN",
+   "sku": "A19569000AGN",
+   "categoryId": "candle-holders",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A18908",
+    "A19528",
+    "A18974",
+    "A19231",
+    "A11960",
+    "A13260",
+    "A19605",
+    "A18874",
+    "A12094",
+    "A19351"
+   ],
+   "productListings": [
+    "A19560",
+    "A19558"
+   ],
+   "colourSwatch": "colour_2"
+  },
+  {
+   "productId": "A20297",
+   "listingId": "A20297000AGH",
+   "sku": "A20297000AGH",
+   "categoryId": "decorative-accessories",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19569",
+    "A19605",
+    "A17883",
+    "A14015",
+    "A13260",
+    "A19601",
+    "A18874",
+    "LEBTS",
+    "A19227",
+    "A19231"
+   ],
+   "productListings": [
+    "A20303",
+    "A17496",
+    "A20294"
+   ],
+   "colourSwatch": "colour_24"
+  },
+  {
+   "productId": "A19804",
+   "listingId": "A19804000ACB",
+   "sku": "A19804000ACB",
+   "categoryId": "decorative-accessories",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "XSAED",
+    "A19231",
+    "A19429",
+    "A20433",
+    "A03331",
+    "A06830",
+    "A14016",
+    "A17163",
+    "A19601",
+    "A13260"
+   ],
+   "productListings": [
+    "A19803"
+   ],
+   "colourSwatch": "colour_45"
+  },
+  {
+   "productId": "A14016",
+   "listingId": "A14016000AIB",
+   "sku": "A14016000AIB",
+   "categoryId": "baby-accessories",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19227",
+    "A07331",
+    "A06223",
+    "A19558",
+    "A19212",
+    "JWAEX",
+    "A19191",
+    "PUABX",
+    "A18281",
+    "A07264"
+   ],
+   "productListings": [
+    "A14015",
+    "organic-cotton-sightseeing-london-sleeping-bag"
+   ],
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A16744",
+   "listingId": "A16744006ABS",
+   "sku": "A16744006ABS",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "JWAEX",
+    "SYDBS",
+    "A20433",
+    "A18464",
+    "A17163",
+    "A21009",
+    "A19328",
+    "A04317",
+    "A18874",
+    "A13260"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_547"
+  },
+  {
+   "productId": "A20055",
+   "listingId": "A20055030AVL",
+   "sku": "A20055030AVL",
+   "categoryId": "jumpers-and-cardigans",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A12094",
+    "A17163",
+    "A19328",
+    "A03331",
+    "A20433",
+    "A18464",
+    "A19569",
+    "A20146",
+    "A18871",
+    "A06830"
+   ],
+   "productListings": [
+    "A17087",
+    "A19595",
+    "A19354",
+    "A19437",
+    "A19330"
+   ],
+   "colourSwatch": "colour_1116"
+  },
+  {
+   "productId": "A07264",
+   "listingId": "A07264108AIB",
+   "sku": "A07264108AIB",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19107",
+    "A16274",
+    "PUASD",
+    "A12094",
+    "A12468",
+    "JWAEX",
+    "A18908",
+    "A20297",
+    "A19351",
+    "A11960"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A18771",
+   "listingId": "A18771031AUU",
+   "sku": "A18771031AUU",
+   "categoryId": "loungewear",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19107",
+    "A19804",
+    "A06223",
+    "XCAEE",
+    "WHAPW",
+    "A13260",
+    "A12094",
+    "A07355",
+    "JWAEX",
+    "A12468"
+   ],
+   "productListings": [
+    "A18772",
+    "portobello-barrel-jeans",
+    "A19320",
+    "ESCCN",
+    "A18773"
+   ],
+   "colourSwatch": "colour_1105"
+  },
+  {
+   "productId": "PUASD",
+   "listingId": "PUASDDCW",
+   "sku": "PUASDDCW",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19804",
+    "A20075",
+    "A18281",
+    "A20074",
+    "A03331",
+    "XCAEE",
+    "A19227",
+    "A19528",
+    "A17170",
+    "A16744"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_160"
+  },
+  {
+   "productId": "A19351",
+   "listingId": "A19351000AGN",
+   "sku": "A19351000AGN",
+   "categoryId": "lighting",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A20075",
+    "A17170",
+    "A16744",
+    "A17519",
+    "A17883",
+    "PUASD",
+    "A19528",
+    "A20297",
+    "A18874",
+    "A21009"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_2"
+  },
+  {
+   "productId": "A18856",
+   "listingId": "A18856000AAA",
+   "sku": "A18856000AAA",
+   "categoryId": "home-fragrances",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19006",
+    "A20075",
+    "XCAEE",
+    "JWAEX",
+    "A04317",
+    "A21009",
+    "A06223",
+    "A19605",
+    "A19601",
+    "A14015"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_1"
+  },
+  {
+   "productId": "A18281",
+   "listingId": "A18281034ACP",
+   "sku": "A18281034ACP",
+   "categoryId": "clothing-sale",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A20297",
+    "A04605",
+    "WHAPW",
+    "A03331",
+    "A18974",
+    "A19107",
+    "A19328",
+    "A19605",
+    "LEBTS",
+    "A12094"
+   ],
+   "productListings": [
+    "A18689",
+    "A17287",
+    "A16867"
+   ],
+   "colourSwatch": "colour_520"
+  },
+  {
+   "productId": "A17519",
+   "listingId": "A17519000AGN",
+   "sku": "A17519000AGN",
+   "categoryId": "kitchen-accessories",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A16274",
+    "A20433",
+    "A04317",
+    "A11960",
+    "A20146",
+    "A20297",
+    "XSAED",
+    "A19528",
+    "A07331",
+    "A19899"
+   ],
+   "productListings": [
+    "pure-linen-tablecloth",
+    "KAHAR",
+    "KAHMH"
+   ],
+   "colourSwatch": "colour_2"
+  },
+  {
+   "productId": "SYDBS",
+   "listingId": "SYDBSNNA",
+   "sku": "SYDBSNNA",
+   "categoryId": "shower-gel",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A20055",
+    "A19558",
+    "A19107",
+    "A19429",
+    "A17170",
+    "A16744",
+    "A13260",
+    "LEBTS",
+    "A19605",
+    "A14016"
+   ],
+   "productListings": [
+    "A12563",
+    "A16343",
+    "A16448",
+    "SYDBL",
+    "A16666",
+    "A16447",
+    "SYDHW",
+    "SEDRB",
+    "SYDNS",
+    "A16667",
+    "A16335",
+    "SYDHN",
+    "A12557",
+    "SYDBB"
+   ],
+   "colourSwatch": "colour_1"
+  },
+  {
+   "productId": "A19212",
+   "listingId": "A19212006ADE",
+   "sku": "A19212006ADE",
+   "categoryId": "shorts-and-skirts",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A17883",
+    "A19601",
+    "PUASD",
+    "A07331",
+    "A20297",
+    "A17519",
+    "A19227",
+    "A20055",
+    "XSAED",
+    "A04605"
+   ],
+   "productListings": [
+    "A20551",
+    "A20162",
+    "A19617",
+    "A18967"
+   ],
+   "colourSwatch": "colour_268"
+  },
+  {
+   "productId": "A11960",
+   "listingId": "A11960000AAA",
+   "sku": "A11960000AAA",
+   "categoryId": "candles",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A20146",
+    "A18281",
+    "A14016",
+    "A18464",
+    "A19227",
+    "A16744",
+    "A12468",
+    "A19899",
+    "A03331",
+    "A19558"
+   ],
+   "productListings": [
+    "A12101",
+    "A16280",
+    "A05952",
+    "A05939",
+    "A05940",
+    "A16818",
+    "A05941",
+    "A05950",
+    "A16281",
+    "A05949",
+    "A16267",
+    "A16282",
+    "A16273",
+    "A16208",
+    "A05958"
+   ],
+   "colourSwatch": "colour_1"
+  },
+  {
+   "productId": "A18464",
+   "listingId": "A18464012ARV",
+   "sku": "A18464012ARV",
+   "categoryId": "tops-and-t-shirts",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A12094",
+    "PUABX",
+    "A12468",
+    "A20297",
+    "XCAEE",
+    "A20075",
+    "A07264",
+    "A14015",
+    "A18771",
+    "A18856"
+   ],
+   "productListings": [
+    "A18689",
+    "A17287",
+    "portobello-barrel-jeans"
+   ],
+   "colourSwatch": "colour_1032"
+  },
+  {
+   "productId": "A04605",
+   "listingId": "A04605000AIB",
+   "sku": "A04605000AIB",
+   "categoryId": "table-linen-and-accessories",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19006",
+    "A19227",
+    "A13260",
+    "A17170",
+    "A18871",
+    "A19605",
+    "A18974",
+    "PUABX",
+    "A20433",
+    "A19431"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "XCAEE",
+   "listingId": "XCAEEENA",
+   "sku": "XCAEEENA",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A16274",
+    "A19429",
+    "LEBTS",
+    "A18771",
+    "A07264",
+    "A19601",
+    "A20075",
+    "SYDBS",
+    "A19212",
+    "A18974"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_1"
+  },
+  {
+   "productId": "A03331",
+   "listingId": "A03331098AIB",
+   "sku": "A03331098AIB",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A21009",
+    "A06223",
+    "A17883",
+    "A20074",
+    "A07331",
+    "A20297",
+    "JWAEX",
+    "A17163",
+    "A18464",
+    "A19569"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A19231",
+   "listingId": "A19231030ACU",
+   "sku": "A19231030ACU",
+   "categoryId": "jumpers-and-cardigans",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A14016",
+    "A20074",
+    "A20297",
+    "A20075",
+    "A19212",
+    "A19558",
+    "A19429",
+    "XCAEE",
+    "A18281",
+    "SYDBS"
+   ],
+   "productListings": [
+    "A18967",
+    "A19330",
+    "portobello-barrel-jeans",
+    "A19354",
+    "A18950"
+   ],
+   "colourSwatch": "colour_423"
+  },
+  {
+   "productId": "A20074",
+   "listingId": "A20074030AAJ",
+   "sku": "A20074030AAJ",
+   "categoryId": "pyjamas",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A06830",
+    "PUASD",
+    "A18874",
+    "A18908",
+    "A20146",
+    "A16744",
+    "A19558",
+    "A19528",
+    "WHAPW",
+    "A16274"
+   ],
+   "productListings": [
+    "A20073",
+    "A12126",
+    "A20075",
+    "A19326",
+    "A15835",
+    "A14216",
+    "A18867"
+   ],
+   "colourSwatch": "colour_5"
+  },
+  {
+   "productId": "A20146",
+   "listingId": "A20146101AIB",
+   "sku": "A20146101AIB",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A18871",
+    "A17163",
+    "A19558",
+    "PUASD",
+    "A19227",
+    "A18771",
+    "A19107",
+    "A19328",
+    "A19231",
+    "A19191"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A04317",
+   "listingId": "A04317000ADA",
+   "sku": "A04317000ADA",
+   "categoryId": "jewellery",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19605",
+    "A20146",
+    "A03331",
+    "A19528",
+    "A19191",
+    "A16744",
+    "A17163",
+    "A18464",
+    "A07264",
+    "LEBTS"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_294"
+  },
+  {
+   "productId": "A19006",
+   "listingId": "A19006129ACT",
+   "sku": "A19006129ACT",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A17883",
+    "A18908",
+    "A18871",
+    "A19328",
+    "A19212",
+    "A19231",
+    "A17170",
+    "XSAED",
+    "A03331",
+    "A16744"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_374"
+  },
+  {
+   "productId": "A14015",
+   "listingId": "A14015076AIB",
+   "sku": "A14015076AIB",
+   "categoryId": "baby-accessories",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A07264",
+    "A18771",
+    "PUASD",
+    "A20075",
+    "A16744",
+    "A17519",
+    "A07331",
+    "A16274",
+    "A19231",
+    "A03331"
+   ],
+   "productListings": [
+    "A14008",
+    "organic-cotton-sightseeing-london-sleeping-bag",
+    "A14016"
+   ],
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A07331",
+   "listingId": "A07331101AIB",
+   "sku": "A07331101AIB",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19569",
+    "A18908",
+    "A18281",
+    "LEBTS",
+    "A04317",
+    "A18856",
+    "SYDBS",
+    "A17170",
+    "A07264",
+    "A19212"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_15"
+  },
+  {
+   "productId": "A19431",
+   "listingId": "A19431031AKK",
+   "sku": "A19431031AKK",
+   "categoryId": "loungewear",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19006",
+    "A18871",
+    "A19899",
+    "A16744",
+    "A17519",
+    "A20055",
+    "A04605",
+    "A18974",
+    "A07264",
+    "A03331"
+   ],
+   "productListings": [
+    "A19585",
+    "A16174",
+    "A19483"
+   ],
+   "colourSwatch": "colour_161"
+  },
+  {
+   "productId": "A18874",
+   "listingId": "A18874000AGH",
+   "sku": "A18874000AGH",
+   "categoryId": null,
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A07264",
+    "A20146",
+    "A21009",
+    "A17170",
+    "A19191",
+    "A07331",
+    "A19227",
+    "A20074",
+    "A19231",
+    "WHAPW"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_24"
+  },
+  {
+   "productId": "A18908",
+   "listingId": "A18908000AVK",
+   "sku": "A18908000AVK",
+   "categoryId": "hats-and-scarves",
+   "productType": "Standard",
+   "recentlyViewedIds": [
+    "A19227",
+    "A16744",
+    "A21009",
+    "A18281",
+    "A14015",
+    "A12468",
+    "XSAED",
+    "A18871",
+    "A19431",
+    "PUASD"
+   ],
+   "productListings": null,
+   "colourSwatch": "colour_1115"
+  }
+ ],
+ "rejected": []
+}
