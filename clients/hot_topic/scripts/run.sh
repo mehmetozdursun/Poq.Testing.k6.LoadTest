@@ -2,13 +2,13 @@
 # Hot Topic: one command for the sanity, warm-up and load (scale) runs.
 # It only builds the plain `k6 run` command (shown before it runs) and names the output files.
 #
-#   clients/hot_topic/scripts/run.sh <sanity|warmup|load> [--env prod|staging] [--yes] [--dry-run] [-- extra k6 args]
+#   clients/hot_topic/scripts/run.sh <sanity|warmup|load> [--env prod|staging] [--max-data-age <hours>] [--yes] [--dry-run] [-- extra k6 args]
 #
 #   sanity   1% of the target, 5 min,  about 2,000 requests   (abort check after 60 s)
 #   warmup   10% of the target, 15 min, about 50,000 requests (abort check after 90 s)
 #   load     the full scale shape (PROFILE=scale), 85 min, about 2.9M requests (abort check after 3 min)
 #
-# Environment variable: MAX_DATA_AGE_HOURS=72 clients/hot_topic/scripts/run.sh sanity   (overrides the 12 h data limit)
+# --max-data-age 72 overrides the 12 h data limit for this run (MAX_DATA_AGE_HOURS=72 before or after the command works too).
 # Every run writes results/<run>_{report.html, failures.log, output.txt}; k6 itself adds
 # results/hot_topic_<env>_<profile>_<timestamp>_{summary.json, endpoints.csv, failures.csv}.
 # Live dashboard: http://localhost:5665 (open an SSH tunnel first: ssh -L 5665:localhost:5665 <vm>).
@@ -19,6 +19,7 @@ cd "$(dirname "$0")/../../.."  # the project root, wherever the script is starte
 usage() { sed -n '2,13p' "$0" | sed 's/^# \{0,1\}//'; exit "${1:-1}"; }
 
 ENV_NAME=prod
+MAX_AGE="${MAX_DATA_AGE_HOURS:-}"
 ASSUME_YES=false
 DRY_RUN=false
 CHOICE=""
@@ -28,6 +29,8 @@ while [ $# -gt 0 ]; do
   case "$1" in
     sanity|warmup|load|scale) CHOICE="$1" ;;
     --env) ENV_NAME="${2:?--env needs a value}"; shift ;;
+    --max-data-age) MAX_AGE="${2:?--max-data-age needs a number of hours}"; shift ;;
+    MAX_DATA_AGE_HOURS=*) MAX_AGE="${1#*=}" ;;
     --yes|-y) ASSUME_YES=true ;;
     --dry-run) DRY_RUN=true ;;
     -h|--help) usage 0 ;;
@@ -44,6 +47,7 @@ case "$CHOICE" in
   load|scale) K6_PROFILE=scale; ABORT_DELAY=3m; SIZE="about 2.9M requests over 85 min (up to ~870 req/s)" ;;
 esac
 
+case "$MAX_AGE" in ''|*[!0-9.]*) [ -z "$MAX_AGE" ] || { echo "--max-data-age must be a number of hours, got: $MAX_AGE" >&2; exit 1; } ;; esac
 command -v k6 >/dev/null || { echo "k6 is not installed or not on PATH" >&2; exit 1; }
 [ -f secrets/hot_topic.secrets ] || { echo "Missing secrets/hot_topic.secrets (the account scenario signs its requests)" >&2; exit 1; }
 mkdir -p results
@@ -58,7 +62,7 @@ CMD=(k6 run
   --log-format raw
   --console-output "results/${RUN}_failures.log")
 [ "$ENV_NAME" = prod ] && CMD+=(-e ALLOW_PROD=true)
-[ -n "${MAX_DATA_AGE_HOURS:-}" ] && CMD+=(-e "MAX_DATA_AGE_HOURS=${MAX_DATA_AGE_HOURS}")
+[ -n "$MAX_AGE" ] && CMD+=(-e "MAX_DATA_AGE_HOURS=${MAX_AGE}")
 [ ${#EXTRA[@]} -gt 0 ] && CMD+=("${EXTRA[@]}")
 CMD+=(clients/hot_topic/test.js)
 
