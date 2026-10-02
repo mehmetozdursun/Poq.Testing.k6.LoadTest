@@ -90,7 +90,7 @@ clients/hot_topic/test.js
 - **Inputs:** `input/products_prod.json`, `input/products_staging.json` (per-environment lists).
 - **Validator rules:** a fresh device id per cart session; add-to-bag body `{quantity, variantId, productId}`; success = HTTP 200.
 - **Accounts** (`data/accounts_<env>.json`, gitignored): prod 978, staging 496.
-- **Keywords:** `data/keywords.json`, 9,890 random dictionary words from JMeter (replacing them is an open decision). `data/universal_links.json` holds the universal links.
+- **Keywords:** `data/keywords.json`, a curated list of realistic Hot Topic searches (bands, licences, apparel types, gifts). It replaced the 9,890 random JMeter dictionary words, some of which made the search return 500 (e.g. `ursae`). Provisional: the list is not yet checked against the API and not weighted by real search volume. `data/universal_links.json` holds the universal links.
 - Only about 15% of the listed prod catalogue is purchasable on the live client; 40 of 389 checked products return HTTP 500 on the PDP.
 
 ## Open items

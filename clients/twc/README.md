@@ -32,7 +32,7 @@ node prep/validate-gift-bundles.mjs twc --env staging               # 21 bundles
 - **Inputs:** `input/products.json` (2,354 ids) and `input/gift_bundles.json` (21 bundles), from Utilities `new_gen/input`.
 - **Gift bundles** (`data/gift_bundles_<env>.json`) are optional: without the file, the gift box step is skipped.
 - **Accounts** (`data/accounts_<env>.json`, gitignored): staging 337, prod 20, dev 326, from the JMeter suite. Prod's 20 accounts only support small logged-in concurrency.
-- **Keywords:** `data/keywords.json`, 108 generic fashion terms carried over from JMeter (replacing them is an open decision).
+- **Keywords:** `data/keywords.json`, a curated list of realistic The White Company searches (bedding, bath, nightwear, home, candles and fragrance, gifts, kidswear). It replaced the 108 generic fashion phrases from JMeter, which are not what shoppers type. Provisional: not checked against the API and not weighted by real search volume.
 - **Data age limit:** 12 h (`maxDataAgeHours`).
 
 ## Prod notes
