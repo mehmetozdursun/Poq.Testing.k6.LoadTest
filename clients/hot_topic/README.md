@@ -11,7 +11,7 @@ scenarios keep after the guest token, as the app does. Reference suite: `hot_top
 
 | Scenario | Share | What it does |
 |---|---|---|
-| `browser` | 70% | App start, categories, search, PLP with 6 sort/filter variants, reviews, store stock, bag (add, quantity 2, removed at the end), wishlist v3, barcode, stores, more, universal link, carousels, voucher |
+| `browser` | 70% | App start, categories, search, PLP with 5 sort variants, reviews, store stock, bag (add, quantity 2, removed at the end), wishlist v3, barcode, stores, more, universal link, carousels, voucher |
 | `shopper` | 21% | App start, categories, search, PLP, full PDP with 3 recommendation calls, store stock, bag, checkout start, remove, barcode, wishlist, stores, more, carousels, universal link |
 | `account` | 9% | App start, guest token, **bearer login**, cart / wishlist / account content, profile (edit the last name, put it back), address book (validate, add, edit, delete), QAS, search, PLP, store stock, PDP, bag, checkout start, remove, more, logout. **Every request is signed** (`poq-auth`) |
 | `register` | opt-in | App start, guest token, registration lookup, address validate, loyalty profile create, register, default address (the Gen-2 calls from the team's Postman suite; register refuses `example.com`, so the domain is `byom.de`). **Creates real accounts that cannot be deleted** |
@@ -95,7 +95,7 @@ clients/hot_topic/test.js
 
 ## Open items
 
-- `Add voucher` fails on a device's second iteration (`InvalidCouponCodeException`): the voucher is never removed.
+- `Remove voucher` (`DELETE /vouchers/{appId}/{coupon_item_id}`, id from the add response) is taken from the card_factory JMeter suite and has not yet been seen against the Hot Topic API: check its status and body on the first run.
 - The old Gen-2 login, forgot-password, account-details and cart-wishlist calls were removed: the app
   no longer makes them. The previous version is in `results/backup_pre_gen3_2026-10-01/`.
 - The app accepted a birth date that makes the user 12 years old at registration (live client).

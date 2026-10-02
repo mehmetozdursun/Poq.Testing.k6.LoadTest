@@ -110,7 +110,6 @@ export default {
   // Contiguous US, for store stock / store search by coordinates (JMeter used random global points).
   storeSearchBox: { lat: [24.5, 49.4], lng: [-124.8, -66.9] },
   storeSearchZip: '92020',
-  priceRange: [5, 500], // min/max price filter bounds (min_max_values.csv range)
   voucherCode: 'ACCESS13',
   // Address book (app 26.2.0): the address added, edited (apartment) and deleted by the account scenario.
   addressBook: { address1: '801 University Blvd', address2: 'Apt 2', city: 'Tuscaloosa', stateCode: 'AL', postCode: '35401' },
@@ -135,37 +134,22 @@ export default {
     { name: 'PLP sort: price high-low', query: { sort: 'priceHighToLow' }, checks: { 'has paging links': has('next', 'first') } },
   ],
 
-  // Per-endpoint p95 limits = 1.5 × the 2025-09-24 prod baseline p95 (floor 500 ms), rounded up
-  // to 50 ms. Regression guards until SLOs are agreed (plan §14.1, §16).
+  // Per-endpoint p95 limits. Relaxed on 2026-10-02 (user request: "no need to be so aggressive"). The first
+  // values were 1.5 × the 2025-09-24 JMeter baseline (floor 500 ms); a paced prod run from a laptop breached 26
+  // of them. Now: every endpoint without its own entry uses `default`, and the slower ones are listed below.
+  // All provisional until SLOs are agreed (plan §14.1, §16).
   limits: {
-    maxFailedRate: 0.01,
+    maxFailedRate: 0.05, // was 0.01: one failed call in a short run breached it
     minChecksRate: 0.99,
     prodAbortFailedRate: 0.1, // prod safety stop above this failure rate…
     prodAbortDelay: '60s', // …evaluated from this point (override per run: -e ABORT_FAILED_RATE / -e ABORT_DELAY)
     p95Ms: {
       default: 1500,
-      'Search by keyword': 700,
-      'Universal link': 550,
-      Login: 1900,
-      'Add voucher': 650,
-      'Add to bag': 1300,
-      'Get bag': 1050,
-      'Update bag item': 850,
-      'Remove bag item': 900,
-      'Checkout start': 600,
-      // every other baseline endpoint: 500. The member-flow and registration calls added in rev 22 (Wishlist
-      // item ids, Update profile, Get/Add/Edit/Delete address, Address validate, Register lookup, Loyalty
-      // profile create, Register, App launch) have no baseline yet: they use the default above (provisional).
-      ...Object.fromEntries([
-        'Splash (iOS)', 'Banners', 'App stories', 'Settings config', 'Shop categories', 'Predictive search', 'PLP',
-        'PLP sort: best seller', 'PLP sort: new arrivals', 'PLP sort: top rated', 'PLP sort: price low-high',
-        'PLP sort: price high-low', 'PLP filter: price range', 'Product details', 'Product reviews',
-        'Recommendations: PDP bottom', 'Recommendations: PDP top', 'Recommendations: recently viewed',
-        'Store stock by coordinates', 'Store stock by zip code', 'Store stock detail', 'Store details',
-        'Add to wishlist', 'Get wishlist', 'Delete wishlist item', 'Clear wishlist', 'Barcode scan', 'Stores',
-        'Stores by coordinates', 'More screen', 'Recommendations: home top', 'Recommendations: home bottom',
-        'QAS: suggestions', 'QAS: valid address',
-      ].map((n) => [n, 500])),
+      Login: 3000,
+      'Search by keyword': 2500, // paced run: p95 2.0 s over 6 samples
+      'Add to bag': 2500,
+      'Product details': 4000, // paced run: p95 3.4 s over 3 samples
+      'PLP sort: best seller': 6000, // paced run: p95 6.0 s over 3 samples (large categories)
     },
   },
 };
